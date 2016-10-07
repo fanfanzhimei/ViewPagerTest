@@ -1,0 +1,21 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.zhi.www.wx.MainActivity">
+
+    <item
+        android:id="@+id/action_search"
+        android:actionViewClass="android.widget.SearchView"
+        android:icon="@mipmap/action_search"
+        app:showAsAction="always|collapseActionView"
+        android:title="Search" />
+
+    <item
+        android:id="@+id/action_plus"
+        app:actionProviderClass="com.zhi.www.viewpagertest.PlusActionProvider"
+        android:icon="@mipmap/action_more"
+        app:showAsAction="ifRoom"
+        android:title="@null" />
+
+</menu>
+

@@ -1,0 +1,53 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/view_pager"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#000000" />
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="bottom"
+        android:paddingBottom="5dp"
+        android:background="#cccccc"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_chat"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radiobutton_chats"
+            android:checked="true"
+            android:text="微信"/>
+
+        <RadioButton
+            android:id="@+id/rb_contacts"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radiobutton_contacts"
+            android:text="通讯录"/>
+
+        <RadioButton
+            android:id="@+id/rb_discover"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radiobutton_discover"
+            android:text="发现"/>
+
+        <RadioButton
+            android:id="@+id/rb_me"
+            style="@style/RadioButton"
+            android:drawableTop="@drawable/radiobutton_me"
+            android:text="我"/>
+
+    </RadioGroup>
+
+</LinearLayout>
